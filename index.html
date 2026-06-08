@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Technology-driven company — premium, clean, high-converting landing page." />
+
+<title>NovaTech — Innovation Platform</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header section--dark" id="top">
+    <div class="container header-inner">
+      <!-- Mobile-first header: [Hamburger] [Logo placeholder] [Name] [Apply Now] -->
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+        <!-- Desktop menu -->
+        <ul class="nav-links" role="list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#careers" class="nav-link">Career</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="brand" href="#home" aria-label="MPSD Trinity Technologies Home">
+        <img class="brand-logo-img" src="logo.png" alt="NSPD Trinity Academy logo" />
+
+        <span class="brand-name">
+          <span class="brand-line brand-line--primary">MPSD Trinity</span>
+          <span class="brand-line brand-line--secondary">Technologies</span>
+        </span>
+      </a>
+
+
+      <a class="btn btn--primary btn--header" href="#apply">Apply Now</a>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="section section--dark" id="home">
+    <div class="container hero">
+      <div class="hero-left">
+        <div class="kicker">Technology-driven. Human-centered.</div>
+        <h1 class="hero-title">
+          Build the next wave of <span class="accent">Innovation</span>
+        </h1>
+        <p class="hero-subtitle">
+          We design and deliver high-performance digital platforms—AI-ready, secure by default, and built to scale.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#projects">Explore Our Projects</a>
+          <a class="btn btn--ghost" href="#contact">Contact Us</a>
+        </div>
+
+        <div class="hero-trust" aria-label="Highlights">
+          <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span>AI & Cloud Engineering</div>
+          <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span>Security-first Delivery</div>
+          <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span>Premium UX Systems</div>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-label="Glowing tech graphic">
+        <div class="globe-wrap">
+          <!-- Neon abstract globe + orbit lines -->
+          <svg class="globe" viewBox="0 0 600 600" role="img" aria-label="Globe graphic">
+            <defs>
+              <radialGradient id="g1" cx="35%" cy="25%" r="70%">
+                <stop offset="0%" stop-color="#1DE9B6" stop-opacity="0.55" />
+                <stop offset="45%" stop-color="#00E5FF" stop-opacity="0.25" />
+                <stop offset="100%" stop-color="#041122" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#00E5FF" />
+                <stop offset="100%" stop-color="#1DE9B6" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <circle cx="300" cy="300" r="190" fill="url(#g1)" />
+            <circle cx="300" cy="300" r="190" fill="none" stroke="url(#stroke)" stroke-width="2" opacity="0.9" filter="url(#glow)" />
+
+            <!-- Latitude/longitude rings -->
+            <g opacity="0.9" filter="url(#glow)">
+              <ellipse cx="300" cy="300" rx="200" ry="70" fill="none" stroke="#00E5FF" stroke-width="1.2" />
+              <ellipse cx="300" cy="300" rx="160" ry="120" fill="none" stroke="#1DE9B6" stroke-width="1.2" />
+              <ellipse cx="300" cy="300" rx="80" ry="170" fill="none" stroke="#00E5FF" stroke-width="1.1" />
+            </g>
+
+            <!-- Orbit particles -->
+            <g filter="url(#glow)">
+              <circle cx="420" cy="260" r="4" fill="#00E5FF" />
+              <circle cx="175" cy="330" r="4" fill="#1DE9B6" />
+              <circle cx="300" cy="120" r="3.5" fill="#00E5FF" />
+              <circle cx="465" cy="365" r="3.5" fill="#1DE9B6" />
+              <circle cx="240" cy="480" r="3.5" fill="#00E5FF" />
+            </g>
+
+            <!-- Tech grid -->
+            <g opacity="0.25">
+              <path d="M140 300H460" stroke="#00E5FF" stroke-width="1" />
+              <path d="M300 140V460" stroke="#1DE9B6" stroke-width="1" />
+              <path d="M175 220L425 380" stroke="#00E5FF" stroke-width="1" />
+              <path d="M425 220L175 380" stroke="#1DE9B6" stroke-width="1" />
+            </g>
+          </svg>
+
+          <!-- Floating AI/tech icons -->
+          <div class="float-icon i-1" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2l2.2 6.7H21l-5.4 3.9L17.8 19 12 15.6 6.2 19l2.2-6.4L3 8.7h6.8L12 2z" stroke="#00E5FF" stroke-width="1.6" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="float-icon i-2" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 7h10v10H7V7z" stroke="#1DE9B6" stroke-width="1.6" />
+              <path d="M4 10V4h6" stroke="#00E5FF" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M20 14v6h-6" stroke="#00E5FF" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="float-icon i-3" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3v18" stroke="#00E5FF" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M3 12h18" stroke="#1DE9B6" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M7 7l10 10" stroke="#00E5FF" stroke-width="1.6" stroke-linecap="round" opacity="0.9" />
+            </svg>
+          </div>
+
+          <!-- subtle neon base -->
+          <div class="neon-base" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="section section--light" id="about">
+    <div class="container about">
+      <div class="about-left">
+        <div class="section-label"><span class="accent-dot"></span> Who We Are</div>
+        <h2 class="section-title section-title--dark">
+          Trusted teams. <span class="accent">Engineering</span> excellence.
+        </h2>
+        <p class="body body--dark">
+          We’re a technology-driven company focused on building modern platforms and products.
+          Our approach blends premium design, pragmatic architecture, and AI-ready engineering.
+        </p>
+        <p class="body body--dark">
+          From discovery to launch, we help organizations move faster—without compromising security, reliability, or user experience.
+        </p>
+
+        <div class="about-actions">
+          <a class="btn btn--primary" href="#services">See What We Do</a>
+        </div>
+      </div>
+
+      <div class="about-right" role="list" aria-label="Vision and Mission cards">
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="line-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" stroke="#00E5FF" stroke-width="1.7" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="info-card-title">Vision</h3>
+          </div>
+          <ul class="check-list">
+            <li><span class="check">✓</span>Design systems that scale</li>
+            <li><span class="check">✓</span>AI-ready products by default</li>
+            <li><span class="check">✓</span>Secure foundations for growth</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="line-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 19V5" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
+                <path d="M4 5h16l-2 6H6l-2-6z" stroke="#00E5FF" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M8 19h8" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="info-card-title">Mission</h3>
+          </div>
+          <ul class="check-list">
+            <li><span class="check">✓</span>Deliver fast with quality</li>
+            <li><span class="check">✓</span>Turn insights into outcomes</li>
+            <li><span class="check">✓</span>Ship experiences users love</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section--offwhite" id="services">
+    <div class="container">
+      <div class="center-head">
+        <div class="section-label section-label--center"><span class="accent-dot"></span> What We Do</div>
+        <h2 class="section-title section-title--dark">Premium services for modern teams</h2>
+        <p class="body body--dark" style="max-width: 62ch; margin: 0 auto;">
+          Clean architecture, sharp UX, and AI-enabled workflows—packaged as reliable delivery.
+        </p>
+      </div>
+
+      <div class="grid-3 services-grid" role="list" aria-label="Services">
+        <div class="feature-card" role="listitem">
+          <div class="line-icon line-icon--c">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7h16M7 4v16" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M17 4v16" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">AI Platform Engineering</h3>
+          <p class="feature-desc">Model-ready pipelines, data orchestration, and production-grade serving.</p>
+        </div>
+
+        <div class="feature-card" role="listitem">
+          <div class="line-icon line-icon--c">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2l8 4v6c0 5-3.5 10-8 10S4 17 4 12V6l8-4z" stroke="#00E5FF" stroke-width="1.7" stroke-linejoin="round"/>
+              <path d="M9 12l2 2 4-5" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Security & Compliance</h3>
+          <p class="feature-desc">Threat modeling, secure SDLC, and policy-aligned implementations.</p>
+        </div>
+
+        <div class="feature-card" role="listitem">
+          <div class="line-icon line-icon--c">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12h18" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M7 7h10" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M9 17h6" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Cloud & DevOps</h3>
+          <p class="feature-desc">Scalable infrastructure, observability, and automation for velocity.</p>
+        </div>
+
+        <div class="feature-card" role="listitem">
+          <div class="line-icon line-icon--c">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 7h10v10H7V7z" stroke="#00E5FF" stroke-width="1.7"/>
+              <path d="M4 10V4h6" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M20 14v6h-6" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Product UX Systems</h3>
+          <p class="feature-desc">Design tokens, component libraries, and conversion-focused UX.</p>
+        </div>
+
+        <div class="feature-card" role="listitem">
+          <div class="line-icon line-icon--c">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3a9 9 0 0 0 0 18" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M12 3a9 9 0 0 1 0 18" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M12 12l4-4" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Data & Analytics</h3>
+          <p class="feature-desc">Real-time dashboards, pipelines, and decision intelligence.</p>
+        </div>
+
+        <div class="feature-card" role="listitem">
+          <div class="line-icon line-icon--c">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 16l4-4 4 4 8-8" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 8v4h-4" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Automation & Integrations</h3>
+          <p class="feature-desc">API-first systems, workflows, and seamless service integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section class="section section--dark" id="projects">
+    <div class="container project">
+      <div class="project-left">
+        <div class="section-label"><span class="accent-dot"></span> Featured Project</div>
+        <h2 class="section-title">A polished control layer for AI operations</h2>
+        <p class="body body--light">
+          A modern dashboard experience that turns complex telemetry into actionable insights—fast.
+        </p>
+
+        <div class="bullet-grid" role="list" aria-label="Project benefits">
+          <div class="bullet-item"><span class="check check--glow">✓</span>Real-time monitoring</div>
+          <div class="bullet-item"><span class="check check--glow">✓</span>Role-based access</div>
+          <div class="bullet-item"><span class="check check--glow">✓</span>Audit-ready logs</div>
+          <div class="bullet-item"><span class="check check--glow">✓</span>Automated incident triage</div>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn--primary" href="#apply">Request a Demo</a>
+        </div>
+      </div>
+
+      <div class="project-right" aria-label="Product mockup">
+        <div class="mockup-stack">
+          <div class="mockup laptop" aria-hidden="true">
+            <div class="mockup-topbar">
+              <span class="dot" style="background:#1DE9B6"></span>
+              <span class="dot" style="background:#00E5FF"></span>
+              <span class="dot" style="background:#4B5563"></span>
+              <div class="mockup-title">Ops Dashboard</div>
+            </div>
+            <div class="mockup-body">
+              <div class="dash-row">
+                <div class="metric">
+                  <div class="metric-label">Throughput</div>
+                  <div class="metric-value">1.28×</div>
+                </div>
+                <div class="metric">
+                  <div class="metric-label">Latency</div>
+                  <div class="metric-value">92ms</div>
+                </div>
+                <div class="metric">
+                  <div class="metric-label">Uptime</div>
+                  <div class="metric-value">99.97%</div>
+                </div>
+              </div>
+
+              <div class="dash-panels">
+                <div class="panel panel--chart">
+                  <div class="panel-title">Signals</div>
+                  <div class="spark">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="panel panel--list">
+                  <div class="panel-title">Incidents</div>
+                  <ul class="panel-list" role="list">
+                    <li><span class="pill pill--good">Resolved</span> Build pipeline</li>
+                    <li><span class="pill pill--warn">Investigating</span> Token spikes</li>
+                    <li><span class="pill pill--bad">Action</span> Alert routing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mockup phone" aria-hidden="true">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-head">AI Status</div>
+              <div class="phone-row">
+                <div class="ring">
+                  <div class="ring-inner"></div>
+                </div>
+                <div>
+                  <div class="phone-k">Model health</div>
+                  <div class="phone-v"><span class="accent">Stable</span></div>
+                </div>
+              </div>
+              <div class="phone-cards">
+                <div class="mini-card">Anomaly score ↓</div>
+                <div class="mini-card">Alerts auto-routed</div>
+                <div class="mini-card">Latency under target</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mockup-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements / Milestones -->
+  <section class="section section--light" id="milestones">
+    <div class="container milestones">
+      <div class="milestones-left">
+        <div class="section-label"><span class="accent-dot"></span> Achievements</div>
+        <h2 class="section-title section-title--dark">Milestones we’re building toward</h2>
+        <div class="milestone-list" role="list" aria-label="Current milestones">
+          <div class="milestone"><span class="check">✓</span>Launched AI-ready analytics dashboards</div>
+          <div class="milestone"><span class="check">✓</span>Reduced deployment time with automated pipelines</div>
+          <div class="milestone"><span class="check">✓</span>Implemented security baselines across services</div>
+          <div class="milestone"><span class="check">✓</span>Created a premium design system for product teams</div>
+        </div>
+
+        <div class="milestones-note body body--dark">
+          Outcomes matter: speed, reliability, and conversion-ready experiences.
+        </div>
+      </div>
+
+      <div class="milestones-right" role="list" aria-label="Future goals">
+        <div class="grid-5 goals-grid">
+          <div class="goal-card" role="listitem">
+            <div class="goal-icon" aria-hidden="true">⟡</div>
+            <div class="goal-text">Global rollouts</div>
+          </div>
+          <div class="goal-card" role="listitem">
+            <div class="goal-icon" aria-hidden="true">⌁</div>
+            <div class="goal-text">Edge optimization</div>
+          </div>
+          <div class="goal-card" role="listitem">
+            <div class="goal-icon" aria-hidden="true">⎔</div>
+            <div class="goal-text">Smart automation</div>
+          </div>
+          <div class="goal-card" role="listitem">
+            <div class="goal-icon" aria-hidden="true">∿</div>
+            <div class="goal-text">Privacy by design</div>
+          </div>
+          <div class="goal-card" role="listitem">
+            <div class="goal-icon" aria-hidden="true">⟢</div>
+            <div class="goal-text">Design velocity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers & Internships -->
+  <section class="section section--light" id="careers">
+    <div class="container careers">
+      <div class="center-head" style="margin-bottom: 18px;">
+        <div class="section-label section-label--center"><span class="accent-dot"></span> Careers</div>
+        <h2 class="section-title section-title--dark">Join the team building what’s next</h2>
+      </div>
+
+      <div class="two-cards">
+        <div class="career-card">
+          <div class="career-media" aria-hidden="true">
+            <!-- Lifestyle image placeholder (gradient + noise feel) -->
+            <div class="media-overlay"></div>
+          </div>
+          <div class="career-content">
+            <div class="career-title">Engineering Internships</div>
+            <div class="career-desc">Work with real product teams—ship features, learn fast, grow stronger.</div>
+            <a class="btn btn--primary" href="#apply">View Open Roles</a>
+          </div>
+        </div>
+
+        <div class="career-card">
+          <div class="career-media career-media--alt" aria-hidden="true">
+            <div class="media-overlay"></div>
+          </div>
+          <div class="career-content">
+            <div class="career-title">Product & UX Opportunities</div>
+            <div class="career-desc">Build design systems, craft conversion-focused experiences, and collaborate daily.</div>
+            <a class="btn btn--primary" href="#apply">Explore Careers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application + Contact -->
+  <section class="section section--light" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-panel">
+          <div class="section-label"><span class="accent-dot"></span> Application Form</div>
+          <h2 class="section-title section-title--dark">Apply in minutes</h2>
+          <p class="body body--dark" style="margin-top: -6px;">Tell us what you’re building toward.</p>
+
+          <form class="form" id="apply" action="#" method="post">
+            <div class="form-row">
+              <label class="field">
+                <span class="field-label">Full Name</span>
+                <input class="input" type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label class="field">
+                <span class="field-label">Email</span>
+                <input class="input" type="email" name="email" placeholder="you@company.com" required />
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label class="field">
+                <span class="field-label">Role</span>
+                <select class="input" name="role" required>
+                  <option value="">Select a role</option>
+                  <option>Engineering Internship</option>
+                  <option>Product & UX</option>
+                  <option>Data & Analytics</option>
+                  <option>Cloud / DevOps</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="field-label">Availability</span>
+                <select class="input" name="availability" required>
+                  <option value="">Select</option>
+                  <option>Immediate</option>
+                  <option>1–2 months</option>
+                  <option>3+ months</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="field-label">Upload Portfolio / CV</span>
+              <div class="upload">
+                <input class="upload-input" type="file" name="file" accept="image/*,.pdf" />
+                <div class="upload-ui">
+                  <div class="upload-icon" aria-hidden="true">⤓</div>
+                  <div>
+                    <div class="upload-title">Choose a file</div>
+                    <div class="upload-sub">PDF, PNG, or JPG</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Message</span>
+              <textarea class="input textarea" name="message" placeholder="What are you excited to work on?" rows="4"></textarea>
+            </label>
+
+            <button class="btn btn--primary btn--full" type="submit">Submit</button>
+
+            <div class="form-footnote">By submitting, you agree to be contacted about your application.</div>
+          </form>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-panel contact-panel--alt" aria-label="Contact information">
+          <div class="watermark" aria-hidden="true"></div>
+          <div class="section-label"><span class="accent-dot"></span> Contact</div>
+          <h2 class="section-title section-title--dark">Let’s build together</h2>
+          <p class="body body--dark">Reach out for partnerships, demos, or roles.</p>
+
+          <div class="contact-lines">
+            <div class="contact-line">
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <div>
+                <div class="contact-k">Email</div>
+                <div class="contact-v">hello@novatech.example</div>
+              </div>
+            </div>
+            <div class="contact-line">
+              <span class="contact-icon" aria-hidden="true">☎</span>
+              <div>
+                <div class="contact-k">Phone</div>
+                <div class="contact-v">+1 (555) 013-2025</div>
+              </div>
+            </div>
+            <div class="contact-line">
+              <span class="contact-icon" aria-hidden="true">⌖</span>
+              <div>
+                <div class="contact-k">Location</div>
+                <div class="contact-v">San Francisco • Remote-friendly</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social" aria-label="Social links">
+            <a class="social-btn s1" href="#" aria-label="Twitter">
+              <span aria-hidden="true">𝕏</span>
+            </a>
+            <a class="social-btn s2" href="#" aria-label="LinkedIn">
+              <span aria-hidden="true">in</span>
+            </a>
+            <a class="social-btn s3" href="#" aria-label="GitHub">
+              <span aria-hidden="true">⌂</span>
+            </a>
+            <a class="social-btn s4" href="#" aria-label="Dribbble">
+              <span aria-hidden="true">◍</span>
+            </a>
+          </div>
+
+          <div class="contact-cta">
+            <a class="btn btn--primary" href="#apply">Get Started</a>
+            <a class="btn btn--ghost" href="#projects">See the Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer section--dark" aria-label="Footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand brand--footer">
+            <span class="brand-mark" aria-hidden="true">◆</span>
+            <span class="brand-name">MPSD Trinity Technologies</span>
+          </div>
+          <p class="footer-text">Premium engineering for AI-ready businesses.</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Quick Links</div>
+          <ul class="footer-links" role="list">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Services</div>
+          <ul class="footer-links" role="list">
+            <li><a href="#services">AI Platform Engineering</a></li>
+            <li><a href="#services">Security & Compliance</a></li>
+            <li><a href="#services">Cloud & DevOps</a></li>
+            <li><a href="#services">Product UX Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Contact</div>
+          <div class="footer-text">hello@novatech.example</div>
+          <div class="footer-text">+1 (555) 013-2025</div>
+          <div class="footer-text">San Francisco • Remote</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-border" aria-hidden="true"></div>
+        <div class="copyright">© <span id="year"></span> MPSD Trinity Technologies. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
