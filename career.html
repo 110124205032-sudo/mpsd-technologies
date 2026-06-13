@@ -33,43 +33,46 @@
 
       <div class="two-cards">
         <div class="career-card">
-          <div class="career-media" aria-hidden="true">
-            <div class="media-overlay"></div>
-          </div>
+
           <div class="career-content">
             <div class="career-title">Internship Courses</div>
-            <div class="career-desc">Learn by building: AI chatbots & AI solutions, software development, app & mobile development, cloud computing, IT consulting, and robotics.</div>
-              <div style="margin-top: 6px; display:flex; flex-direction:column; gap: 10px;">
+            <div class="career-desc">Learn by building:</div>
+              <div style="margin-top: 6px; display:flex; flex-direction:column; gap: 10px;" aria-label="Career options">
               <div class="pill" style="width: fit-content; background: rgba(0,229,255,0.10); border: 1px solid rgba(0,229,255,0.22); color: rgba(0,229,255,0.95); font-weight: 900;">AI Chatbots / AI Solutions</div>
               <div class="pill" style="width: fit-content; background: rgba(29,233,182,0.10); border: 1px solid rgba(29,233,182,0.22); color: rgba(29,233,182,0.95); font-weight: 900;">Software Development</div>
               <div class="pill" style="width: fit-content; background: rgba(0,229,255,0.10); border: 1px solid rgba(0,229,255,0.22); color: rgba(0,229,255,0.95); font-weight: 900;">App Development</div>
-              <div class="pill" style="width: fit-content; background: rgba(29,233,182,0.10); border: 1px solid rgba(29,233,182,0.22); color: rgba(29,233,182,0.95); font-weight: 900;">Mobile Development</div>
+              <div class="pill" style="width: fit-content; background: rgba(29,233,182,0.10); border: 1px solid rgba(29,233,182,0.22); color: rgba(29,233,182,0.95); font-weight: 900;">web Development</div>
               <div class="pill" style="width: fit-content; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(255,255,255,0.95); font-weight: 900;">Cloud Computing</div>
               <div class="pill" style="width: fit-content; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(255,255,255,0.95); font-weight: 900;">IT Consulting</div>
               <div class="pill" style="width: fit-content; background: rgba(29,233,182,0.10); border: 1px solid rgba(29,233,182,0.22); color: rgba(29,233,182,0.95); font-weight: 900;">Robotics</div>
             </div>
-            <a class="btn btn--primary" href="#apply" style="margin-top: 14px; width: fit-content;">Apply for a role</a>
-          </div>
+               <button type="button" class="career-action-card career-action-card--alt" data-open-apply="internship" aria-haspopup="dialog">
+              <div class="career-action-card__title">Apply for a Internship</div>
+            </button>      </div>
         </div>
 
         <div class="career-card">
-          <div class="career-media career-media--alt" aria-hidden="true">
-            <div class="media-overlay"></div>
-          </div>
-          <div class="career-content">
-            <div class="career-title">Why work with us</div>
-            <div class="career-desc">High standards, fast feedback, and a culture that values continuous improvement.</div>
-            <ul class="check-list" style="margin-top: 8px;">
-              <li><span class="check">✓</span>Engineering excellence & documentation</li>
-              <li><span class="check">✓</span>Security and reliability by default</li>
-              <li><span class="check">✓</span>Design-led delivery that converts</li>
-            </ul>
-            <a class="btn btn--primary" href="#apply" style="margin-top: 10px; width: fit-content;">Start your application</a>
-          </div>
-        </div>
+
+         
+        <div class="career-content">
+            <div class="career-title">Work Opportunities</div>
+            <div class="career-desc">Work with Us </div>
+              <div style="margin-top: 6px; display:flex; flex-direction:column; gap: 10px;" aria-label="Career options">
+              <div class="pill" style="width: fit-content; background: rgba(0,229,255,0.10); border: 1px solid rgba(0,229,255,0.22); color: rgba(0,229,255,0.95); font-weight: 900;">AI Devaloper</div>
+              <div class="pill" style="width: fit-content; background: rgba(29,233,182,0.10); border: 1px solid rgba(29,233,182,0.22); color: rgba(29,233,182,0.95); font-weight: 900;">Software developer</div>
+              <div class="pill" style="width: fit-content; background: rgba(0,229,255,0.10); border: 1px solid rgba(0,229,255,0.22); color: rgba(0,229,255,0.95); font-weight: 900;">fullstack developer</div>
+              
+              <div class="pill" style="width: fit-content; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(255,255,255,0.95); font-weight: 900;">Cloud engineer</div>
+              <div class="pill" style="width: fit-content; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(255,255,255,0.95); font-weight: 900;">IT Consultant</div>
+              <div class="pill" style="width: fit-content; background: rgba(29,233,182,0.10); border: 1px solid rgba(29,233,182,0.22); color: rgba(29,233,182,0.95); font-weight: 900;">Robotic Engineer</div>
+            </div>
+            <button type="button" class="career-action-card" data-open-apply="job" aria-haspopup="dialog">
+              
+              <div class="career-action-card__title">Apply for a Job</div>
+            </button>           </div></div>
       </div>
 
-      <section class="section" style="padding-bottom: 0;">
+      <!-- <section class="section" style="padding-bottom: 0;">
         <div class="container" style="margin-top: 28px;">
           <div class="project" style="grid-template-columns: 1fr 1fr;">
             <div class="project-left">
@@ -148,82 +151,210 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Application Form -->
+      <!-- Application Actions + Modal Forms -->
       <section class="section section--offwhite" id="apply-form" style="padding-top: 26px;">
         <div class="container">
           <div class="center-head">
             <div class="section-label section-label--center"><span class="accent-dot"></span> Apply</div>
-            <h2 class="section-title section-title--dark">Application form</h2>
+            <h2 class="section-title section-title--dark">Choose your application type</h2>
             <p class="body body--dark" style="max-width: 64ch; margin: 16px auto 0;">
-              Tell us what you’re excited to build. We’ll route your application to the right team.
+              Submit the correct form for internship courses or permanent job opportunities.
+                            <div class="career-action-card__sub">Submit your details and resume for job opportunities and internships.</div>
+
             </p>
           </div>
 
-          <form class="form" id="apply" action="#" method="post" style="margin-top: 20px;">
-            <div class="form-row">
-              <label class="field">
-                <span class="field-label">Full Name</span>
-                <input class="input" type="text" name="name" placeholder="Your name" required />
-              </label>
-              <label class="field">
-                <span class="field-label">Email</span>
-                <input class="input" type="email" name="email" placeholder="you@company.com" required />
-              </label>
-            </div>
+          <!-- Action buttons/cards (forms are not visible on page load) -->
+          <div class="apply-actions" style="margin-top: 22px; display:grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+           
 
-            <div class="form-row">
-              <label class="field">
-                <span class="field-label">Role</span>
-                <select class="input" name="role" required>
-                  <option value="">Select a track</option>
-                  <option>AI Chatbots / AI Solutions</option>
-                  <option>Software Development</option>
-                  <option>App Development</option>
-                  <option>Mobile Development</option>
-                  <option>Cloud Computing</option>
-                  <option>IT Consulting</option>
-                  <option>Robotics</option>
-                </select>
-              </label>
-              <label class="field">
-                <span class="field-label">Availability</span>
-                <select class="input" name="availability" required>
-                  <option value="">Select</option>
-                  <option>Immediate</option>
-                  <option>1–2 months</option>
-                  <option>3+ months</option>
-                </select>
-              </label>
-            </div>
+            
+          </div>
 
-            <label class="field">
-              <span class="field-label">Upload Portfolio / CV</span>
-              <div class="upload">
-                <input class="upload-input" type="file" name="file" accept="image/*,.pdf" />
-                <div class="upload-ui">
-                  <div class="upload-icon" aria-hidden="true">⤓</div>
-                  <div>
-                    <div class="upload-title">Choose a file</div>
-                    <div class="upload-sub">PDF, PNG, or JPG</div>
+          <!-- Modal -->
+          <div class="apply-modal" id="apply-modal" aria-hidden="true">
+            <div class="apply-modal__backdrop" data-close-apply></div>
+
+            <div class="apply-modal__panel" role="dialog" aria-modal="true" aria-labelledby="apply-modal-title">
+              <button type="button" class="apply-modal__close" aria-label="Close" data-close-apply>
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+              <div class="apply-modal__inner" tabindex="-1">
+                <!-- Job Form (same markup as before) -->
+                <div class="apply-form-pane" data-apply-pane="job">
+                  <div style="color: rgba(29,233,182,0.95); font-weight: 900; letter-spacing: .08em; text-transform: uppercase; font-size: 13px;">
+                    Permanent Jobs
                   </div>
+                  <h3 id="apply-modal-title" style="margin: 10px 0 0; color: var(--text-dark); font-size: 26px; line-height: 1.1;">Job Application Requirements</h3>
+
+                  <form class="form" id="apply-job" action="#" method="post" enctype="multipart/form-data" style="margin-top: 16px;">
+                    <div class="form-row">
+                      <label class="field">
+                        <span class="field-label">Full Name</span>
+                        <input class="input" type="text" name="job_full_name" placeholder="Your full name" required />
+                      </label>
+                      <label class="field">
+                        <span class="field-label">Email ID</span>
+                        <input class="input" type="email" name="job_email" placeholder="you@company.com" required />
+                      </label>
+                    </div>
+
+                    <div class="form-row">
+                      <label class="field">
+                        <span class="field-label">Mobile Number</span>
+                        <input class="input" type="tel" name="job_mobile" placeholder="Your mobile number" required />
+                      </label>
+                      <label class="field">
+                        <span class="field-label">College Name</span>
+                        <input class="input" type="text" name="job_college" placeholder="Your college" required />
+                      </label>
+                    </div>
+
+                    <div class="form-row">
+                      <label class="field">
+                        <span class="field-label">Degree</span>
+                        <select class="input" name="job_degree" required>
+                          <option value="">Select degree</option>
+                          <option>Bachelor of Technology (B.Tech)</option>
+                          <option>Bachelor of Engineering (BE)</option>
+                          <option>Bachelor of Computer Applications (BCA)</option>
+                          <option>Master of Technology (M.Tech)</option>
+                          <option>Other</option>
+                        </select>
+                      </label>
+                      <label class="field">
+                        <span class="field-label">Preferred Role</span>
+                        <select class="input" name="job_preferred_role" required>
+                          <option value="">Select role</option>
+                          <option>AI Chatbots / AI Solutions</option>
+                          <option>Software Development</option>
+                          <option>App Development</option>
+                          <option>Mobile Development</option>
+                          <option>Cloud Computing</option>
+                          <option>IT Consulting</option>
+                          <option>Robotics</option>
+                        </select>
+                      </label>
+                    </div>
+
+                    <label class="field">
+                      <span class="field-label">Experience (if any)</span>
+                      <input class="input" type="text" name="job_experience" placeholder="e.g., 1 year, 6 months, Fresher" />
+                    </label>
+
+                    <label class="field">
+                      <span class="field-label">Upload Resume</span>
+                      <div class="upload">
+                        <input class="upload-input" type="file" name="job_resume" accept="application/pdf,.pdf,image/*" required />
+                        <div class="upload-ui">
+                          <div class="upload-icon" aria-hidden="true">⤓</div>
+                          <div>
+                            <div class="upload-title">Choose a file</div>
+                            <div class="upload-sub">PDF preferred</div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+
+                    <button class="btn btn--primary btn--full" type="submit" style="margin-top: 6px;">Submit Job Application</button>
+                    <div class="form-footnote">By submitting, you agree to be contacted about your job application.</div>
+                  </form>
+                </div>
+
+                <!-- Internship Form (same markup as before) -->
+                <div class="apply-form-pane" data-apply-pane="internship">
+                  <div style="color: rgba(0,229,255,0.95); font-weight: 900; letter-spacing: .08em; text-transform: uppercase; font-size: 13px;">
+                    Internship Courses
+                  </div>
+                  <h3 style="margin: 10px 0 0; color: var(--text-dark); font-size: 26px; line-height: 1.1;">Internship Requirements</h3>
+
+                  <form class="form" id="apply-internship" action="#" method="post" enctype="multipart/form-data" style="margin-top: 16px;">
+                    <div class="form-row">
+                      <label class="field">
+                        <span class="field-label">Full Name</span>
+                        <input class="input" type="text" name="intern_full_name" placeholder="Your full name" required />
+                      </label>
+                      <label class="field">
+                        <span class="field-label">Email ID</span>
+                        <input class="input" type="email" name="intern_email" placeholder="you@company.com" required />
+                      </label>
+                    </div>
+
+                    <div class="form-row">
+                      <label class="field">
+                        <span class="field-label">Mobile Number</span>
+                        <input class="input" type="tel" name="intern_mobile" placeholder="Your mobile number" required />
+                      </label>
+                      <label class="field">
+                        <span class="field-label">College Name</span>
+                        <input class="input" type="text" name="intern_college" placeholder="Your college" required />
+                      </label>
+                    </div>
+
+                    <div class="form-row">
+                      <label class="field">
+                        <span class="field-label">Degree</span>
+                        <select class="input" name="intern_degree" required>
+                          <option value="">Select degree</option>
+                          <option>Bachelor of Technology (B.Tech)</option>
+                          <option>Bachelor of Engineering (BE)</option>
+                          <option>Bachelor of Computer Applications (BCA)</option>
+                          <option>Master of Technology (M.Tech)</option>
+                          <option>Other</option>
+                        </select>
+                      </label>
+                      <label class="field">
+                        <span class="field-label">Current Sem</span>
+                        <select class="input" name="intern_current_sem" required>
+                          <option value="">Select current semester</option>
+                          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option>
+                        </select>
+                      </label>
+                    </div>
+
+                    <label class="field">
+                      <span class="field-label">Preferred Course</span>
+                      <select class="input" name="intern_preferred_course" required>
+                        <option value="">Select preferred course</option>
+                        <option>AI Chatbots / AI Solutions</option>
+                        <option>Software Development</option>
+                        <option>App Development</option>
+                        <option>Mobile Development</option>
+                        <option>Cloud Computing</option>
+                        <option>IT Consulting</option>
+                        <option>Robotics</option>
+                      </select>
+                    </label>
+
+                    <label class="field">
+                      <span class="field-label">Upload Resume</span>
+                      <div class="upload">
+                        <input class="upload-input" type="file" name="intern_resume" accept="application/pdf,.pdf,image/*" required />
+                        <div class="upload-ui">
+                          <div class="upload-icon" aria-hidden="true">⤓</div>
+                          <div>
+                            <div class="upload-title">Choose a file</div>
+                            <div class="upload-sub">PDF preferred</div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+
+                    <button class="btn btn--primary btn--full" type="submit" style="margin-top: 6px;">Submit Internship Application</button>
+                    <div class="form-footnote">By submitting, you agree to be contacted about your internship application.</div>
+                  </form>
                 </div>
               </div>
-            </label>
-
-            <label class="field">
-              <span class="field-label">Message</span>
-              <textarea class="input textarea" name="message" placeholder="What are you excited to work on?" rows="4"></textarea>
-            </label>
-
-            <button class="btn btn--primary btn--full" type="submit">Submit application</button>
-            <div class="form-footnote">By submitting, you agree to be contacted about your application.</div>
-          </form>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   </section>
+
 
   <!-- Shared Footer -->
   <div data-include="footer"></div>
