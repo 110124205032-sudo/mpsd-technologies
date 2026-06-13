@@ -5,60 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Technology-driven company — premium, clean, high-converting landing page." />
 
-<title>NovaTech — Innovation Platform</title>
+  <title>NovaTech — Innovation Platform</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header section--dark" id="top">
-    <div class="container header-inner">
-      <!-- Mobile-first header: [Hamburger] [Logo placeholder] [Name] [Apply Now] -->
-      <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-
-        <!-- Desktop menu -->
-        <ul class="nav-links" role="list">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About Us</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#careers" class="nav-link">Career</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <a class="brand" href="#home" aria-label="MPSD Trinity Technologies Home">
-        <img class="brand-logo-img" src="logo.png" alt="NSPD Trinity Academy logo" />
-
-        <span class="brand-name">
-          <span class="brand-line brand-line--primary">MPSD Trinity</span>
-          <span class="brand-line brand-line--secondary">Technologies</span>
-        </span>
-      </a>
-
-
-      <a class="btn btn--primary btn--header" href="#apply">Apply Now</a>
-    </div>
-  </header>
-
+  <!-- Shared Header -->
+  <div data-include="navbar"></div>
 
   <!-- Hero -->
   <section class="section section--dark" id="home">
     <div class="container hero">
       <div class="hero-left">
-        <div class="kicker">Technology-driven. Human-centered.</div>
+        <div class="kicker">Transforming Ideas into Digital Excellence.</div>
         <h1 class="hero-title">
-          Build the next wave of <span class="accent">Innovation</span>
+          AI-Powered Innovation for <span class="accent">Modern Businesses</span>
         </h1>
         <p class="hero-subtitle">
-          We design and deliver high-performance digital platforms—AI-ready, secure by default, and built to scale.
-        </p>
+From intelligent chatbots to enterprise software and cloud platforms, we build technology solutions that drive growth and create lasting impact.        </p>
 
         <div class="hero-actions">
           <a class="btn btn--primary" href="#projects">Explore Our Projects</a>
@@ -183,8 +153,8 @@
             <h3 class="info-card-title">Vision</h3>
           </div>
           <ul class="check-list">
-            <li><span class="check">✓</span>Design systems that scale</li>
-            <li><span class="check">✓</span>AI-ready products by default</li>
+            <li><span class="check">✓</span>Drive digital innovation across industries.</li>
+            <li><span class="check">✓</span>Build a smarter and more connected future.</li>
             <li><span class="check">✓</span>Secure foundations for growth</li>
           </ul>
         </div>
@@ -192,11 +162,10 @@
         <div class="info-card">
           <div class="info-card-top">
             <div class="line-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 19V5" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
-                <path d="M4 5h16l-2 6H6l-2-6z" stroke="#00E5FF" stroke-width="1.7" stroke-linejoin="round"/>
-                <path d="M8 19h8" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path fill="#00FFFF" d="M448 256a192 192 0 1 0 -384 0 192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+</svg>
+        
             </div>
             <h3 class="info-card-title">Mission</h3>
           </div>
@@ -221,77 +190,78 @@
         </p>
       </div>
 
-      <div class="grid-3 services-grid" role="list" aria-label="Services">
-        <div class="feature-card" role="listitem">
-          <div class="line-icon line-icon--c">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 7h16M7 4v16" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
-              <path d="M17 4v16" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">AI Platform Engineering</h3>
-          <p class="feature-desc">Model-ready pipelines, data orchestration, and production-grade serving.</p>
-        </div>
+        <div class="grid-3 services-grid" role="list" aria-label="Services">
+        	  <!-- 1. Web and app development -->
+        	  <div class="feature-card" role="listitem">
+         	  	 <div class="line-icon line-icon--c">
+         	  	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(0, 33, 93)" d="M64 160C64 124.7 92.7 96 128 96L512 96C547.3 96 576 124.7 576 160L576 400L512 400L512 160L128 160L128 400L64 400L64 160zM0 467.2C0 456.6 8.6 448 19.2 448L620.8 448C631.4 448 640 456.6 640 467.2C640 509.6 605.6 544 563.2 544L76.8 544C34.4 544 0 509.6 0 467.2zM281 273L250 304L281 335C290.4 344.4 290.4 359.6 281 368.9C271.6 378.2 256.4 378.3 247.1 368.9L199.1 320.9C189.7 311.5 189.7 296.3 199.1 287L247.1 239C256.5 229.6 271.7 229.6 281 239C290.3 248.4 290.4 263.6 281 272.9zM393 239L441 287C450.4 296.4 450.4 311.6 441 320.9L393 368.9C383.6 378.3 368.4 378.3 359.1 368.9C349.8 359.5 349.7 344.3 359.1 335L390.1 304L359.1 273C349.7 263.6 349.7 248.4 359.1 239.1C368.5 229.8 383.7 229.7 393 239.1z"/></svg>
+         	  	 </div>
+         	    <h3 class="feature-title">Web and App Development</h3>
+        	    <p class="feature-desc">Modern websites and mobile/web apps built for speed, reliability, and great UX.</p>
+        	  </div>
 
-        <div class="feature-card" role="listitem">
-          <div class="line-icon line-icon--c">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2l8 4v6c0 5-3.5 10-8 10S4 17 4 12V6l8-4z" stroke="#00E5FF" stroke-width="1.7" stroke-linejoin="round"/>
-              <path d="M9 12l2 2 4-5" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Security & Compliance</h3>
-          <p class="feature-desc">Threat modeling, secure SDLC, and policy-aligned implementations.</p>
-        </div>
+        	  <!-- 2. Software development -->
+        	  <div class="feature-card" role="listitem">
+        	    <div class="line-icon line-icon--c">
+        	     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(0, 33, 93)" d="M96 157.7L279.6 132.4L279.6 309.8L96 309.8L96 157.7zM96 482.3L279.6 507.6L279.6 332.4L96 332.4L96 482.3zM299.8 510.3L544 544L544 332.4L299.8 332.4L299.8 510.3zM299.8 129.7L299.8 309.8L544 309.8L544 96L299.8 129.7z"/></svg>
+        	    </div>
+        	    <h3 class="feature-title">Software Development</h3>
+        	    <p class="feature-desc">Custom software, backend systems, and scalable platforms tailored to your business needs.</p>
+        	  </div>
 
-        <div class="feature-card" role="listitem">
-          <div class="line-icon line-icon--c">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 12h18" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
-              <path d="M7 7h10" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
-              <path d="M9 17h6" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Cloud & DevOps</h3>
-          <p class="feature-desc">Scalable infrastructure, observability, and automation for velocity.</p>
-        </div>
+        	  <!-- 3. AI chatbot and solutions -->
+        	  <div class="feature-card" role="listitem">
+        	    <div class="line-icon line-icon--c">
+        	      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(0, 33, 93)" d="M260.4 249.8L260.4 201.2C260.4 197.1 261.9 194 265.5 192L363.3 135.7C376.6 128 392.5 124.4 408.9 124.4C470.3 124.4 509.3 172 509.3 222.7C509.3 226.3 509.3 230.4 508.8 234.5L407.3 175.1C401.2 171.5 395 171.5 388.9 175.1L260.4 249.8zM488.7 439.2L488.7 323C488.7 315.8 485.6 310.7 479.5 307.1L351 232.4L393 208.3C396.6 206.3 399.7 206.3 403.2 208.3L501 264.7C529.2 281.1 548.1 315.9 548.1 349.7C548.1 388.6 525.1 424.5 488.7 439.3L488.7 439.3zM230.2 336.8L188.2 312.2C184.6 310.2 183.1 307.1 183.1 303L183.1 190.4C183.1 135.6 225.1 94.1 281.9 94.1C303.4 94.1 323.4 101.3 340.3 114.1L239.4 172.5C233.3 176.1 230.2 181.2 230.2 188.4L230.2 336.9L230.2 336.9zM320.6 389L260.4 355.2L260.4 283.5L320.6 249.7L380.8 283.5L380.8 355.2L320.6 389zM359.3 544.7C337.8 544.7 317.8 537.5 300.9 524.7L401.8 466.3C407.9 462.7 411 457.6 411 450.4L411 301.9L453.5 326.5C457.1 328.5 458.6 331.6 458.6 335.7L458.6 448.3C458.6 503.1 416.1 544.6 359.3 544.6L359.3 544.6zM237.8 430.5L140.1 374.2C111.9 357.8 93 323 93 289.2C93 249.8 116.6 214.4 152.9 199.6L152.9 316.3C152.9 323.5 156 328.6 162.1 332.2L290.1 406.4L248.1 430.5C244.5 432.5 241.4 432.5 237.9 430.5zM232.2 514.5C174.3 514.5 131.8 471 131.8 417.2C131.8 413.1 132.3 409 132.8 404.9L233.7 463.3C239.8 466.9 246 466.9 252.1 463.3L380.6 389.1L380.6 437.7C380.6 441.8 379.1 444.9 375.5 446.9L277.7 503.2C264.4 510.9 248.5 514.5 232.1 514.5L232.1 514.5zM359.2 575.4C421.2 575.4 472.9 531.4 484.6 473C541.9 458.1 578.8 404.4 578.8 349.6C578.8 313.8 563.4 278.9 535.8 253.9C538.4 243.1 539.9 232.4 539.9 221.6C539.9 148.4 480.5 93.6 411.9 93.6C398.1 93.6 384.8 95.6 371.5 100.3C348.5 77.8 316.7 63.4 281.9 63.4C219.9 63.4 168.2 107.4 156.5 165.8C99.2 180.6 62.3 234.4 62.3 289.2C62.3 325 77.7 359.9 105.3 384.9C102.7 395.7 101.2 406.4 101.2 417.2C101.2 490.4 160.6 545.2 229.2 545.2C243 545.2 256.3 543.2 269.6 538.5C292.6 561 324.4 575.4 359.2 575.4z"/></svg>
 
-        <div class="feature-card" role="listitem">
-          <div class="line-icon line-icon--c">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 7h10v10H7V7z" stroke="#00E5FF" stroke-width="1.7"/>
-              <path d="M4 10V4h6" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
-              <path d="M20 14v6h-6" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Product UX Systems</h3>
-          <p class="feature-desc">Design tokens, component libraries, and conversion-focused UX.</p>
-        </div>
+        	    </div>
+        	    <h3 class="feature-title">AI Chatbot and Solutions</h3>
+        	    <p class="feature-desc">AI assistants, chatbots, and intelligent automation that integrate with your workflows.</p>
+        	  </div>
 
-        <div class="feature-card" role="listitem">
-          <div class="line-icon line-icon--c">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 3a9 9 0 0 0 0 18" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
-              <path d="M12 3a9 9 0 0 1 0 18" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
-              <path d="M12 12l4-4" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Data & Analytics</h3>
-          <p class="feature-desc">Real-time dashboards, pipelines, and decision intelligence.</p>
-        </div>
+        	  <!-- 4. IoT and robotics -->
+        	  <div class="feature-card" role="listitem">
+        	    <div class="line-icon line-icon--c">
+        	      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(0, 33, 93)" d="M452.5 317.9C465.8 317.9 476.5 328.6 476.5 341.9C476.5 355.2 465.8 365.9 452.5 365.9C439.2 365.9 428.5 355.2 428.5 341.9C428.5 328.6 439.2 317.9 452.5 317.9zM187.4 317.9C200.7 317.9 211.4 328.6 211.4 341.9C211.4 355.2 200.7 365.9 187.4 365.9C174.1 365.9 163.4 355.2 163.4 341.9C163.4 328.6 174.1 317.9 187.4 317.9zM461.1 221.4L509 138.4C509.8 137.3 510.3 136 510.5 134.6C510.7 133.2 510.7 131.9 510.4 130.5C510.1 129.1 509.5 127.9 508.7 126.8C507.9 125.7 506.9 124.8 505.7 124.1C504.5 123.4 503.2 123 501.8 122.8C500.4 122.6 499.1 122.8 497.8 123.2C496.5 123.6 495.3 124.3 494.2 125.1C493.1 125.9 492.3 127.1 491.7 128.3L443.2 212.4C404.4 195 362.4 186 319.9 186C277.4 186 235.4 195 196.6 212.4L148.2 128.4C147.6 127.2 146.7 126.1 145.7 125.2C144.7 124.3 143.4 123.7 142.1 123.3C140.8 122.9 139.4 122.8 138.1 122.9C136.8 123 135.4 123.5 134.2 124.2C133 124.9 132 125.8 131.2 126.9C130.4 128 129.8 129.3 129.5 130.6C129.2 131.9 129.2 133.3 129.4 134.7C129.6 136.1 130.2 137.3 130.9 138.5L178.8 221.5C96.5 266.2 40.2 349.5 32 448L608 448C599.8 349.5 543.5 266.2 461.1 221.4z"/></svg>
 
-        <div class="feature-card" role="listitem">
-          <div class="line-icon line-icon--c">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 16l4-4 4 4 8-8" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M20 8v4h-4" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">Automation & Integrations</h3>
-          <p class="feature-desc">API-first systems, workflows, and seamless service integration.</p>
-        </div>
+        	    </div>
+        	    <h3 class="feature-title">IoT and Robotics</h3>
+        	    <p class="feature-desc">Connected IoT systems and robotics solutions for real-world sensing, control, and automation.</p>
+        	  </div>
+
+        	  <!-- 5. IT consulting -->
+        	  <div class="feature-card" role="listitem">
+        	    <div class="line-icon line-icon--c">
+        	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(0, 33, 93)" d="M498.8 250.5L541.3 208L576 208C593.7 208 608 193.7 608 176L608 112C608 94.3 593.7 80 576 80L255.6 80C226.6 80 198.3 89.3 174.9 106.5L48.3 199.8C30.5 212.9 26.7 237.9 39.8 255.7C52.9 273.5 77.9 277.3 95.7 264.2L215.4 176L328 176C341.3 176 352 186.7 352 200C352 213.3 341.3 224 328 224L256 224C238.3 224 224 238.3 224 256C224 273.7 238.3 288 256 288L408.2 288C442.1 288 474.7 274.5 498.7 250.5zM141.3 389.5L98.7 432L64 432C46.3 432 32 446.3 32 464L32 528C32 545.7 46.3 560 64 560L384.5 560C413.5 560 441.8 550.7 465.2 533.5L591.8 440.2C609.6 427.1 613.4 402.1 600.3 384.3C587.2 366.5 562.2 362.7 544.4 375.8L424.6 464L312 464C298.7 464 288 453.3 288 440C288 426.7 298.7 416 312 416L384 416C401.7 416 416 401.7 416 384C416 366.3 401.7 352 384 352L231.8 352C197.9 352 165.3 365.5 141.3 389.5z"/></svg>
+        	    </div>
+        	    <h3 class="feature-title">IT Consulting</h3>
+        	    <p class="feature-desc">Technology strategy, architecture planning, and implementation guidance aligned with your goals.</p>
+        	  </div>
+
+        	  <!-- 6. Cloud computing -->
+        	  <div class="feature-card" role="listitem">
+        	    <div class="line-icon line-icon--c">
+        	     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="rgb(0, 33, 93)" d="M144 480c-79.5 0-144-64.5-144-144 0-63.4 41-117.2 97.9-136.5-1.3-7.7-1.9-15.5-1.9-23.5 0-79.5 64.5-144 144-144 55.4 0 103.5 31.3 127.6 77.1 14.2-8.3 30.8-13.1 48.4-13.1 53 0 96 43 96 96 0 15.7-3.8 30.6-10.5 43.7 44 20.3 74.5 64.7 74.5 116.3 0 70.7-57.3 128-128 128l-304 0zM377 313c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-31 31 0-102.1c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 102.1-31-31c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c9.4 9.4 24.6 9.4 33.9 0l72-72z"/></svg>
+
+        	    </div>
+        	    <h3 class="feature-title">Cloud Computing</h3>
+        	    <p class="feature-desc">Secure cloud infrastructure, DevOps pipelines, and scalable deployments built for performance.</p>
+        	  </div>
+
+        	  <!-- 7. Internships and training -->
+        	  <div class="feature-card" role="listitem">
+        	    <div class="line-icon line-icon--c">
+        	      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(0, 33, 93)" d="M192 80a56 56 0 1 0 0-112 56 56 0 1 0 0 112zM176 512l0-160c0-8.8 7.2-16 16-16s16 7.2 16 16l0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-336 128 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-16 0 0-48 192 0 0 192-192 0 0-32-64 0 0 48c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-224c0-26.5-21.5-48-48-48L368 0c-26.5 0-48 21.5-48 48l0 64-122.7 0c-45.6 0-88.5 21.6-115.6 58.2L14.3 260.9c-10.5 14.2-7.6 34.2 6.6 44.8s34.2 7.6 44.8-6.6L112 236.7 112 512c0 17.7 14.3 32 32 32s32-14.3 32-32z"/></svg>
+
+        	    </div>
+        	    <h3 class="feature-title">Internships and Training</h3>
+        	    <p class="feature-desc">Hands-on learning, mentorship, and real project experience to train future engineers.</p>
+        	  </div> 
+            
       </div>
-    </div>
+           <centre>     <a class="btn btn--primary" href="./contact.html" style="margin-top: 10px; background: var(--cyan); color: black; border-color: rgba(255,255,255,0.25); box-shadow: 0 12px 26px rgba(0,229,255,0.20);">Bring your ideas into life</a>
+
+           </centre>    </div>
   </section>
 
   <!-- Featured Project -->
@@ -299,21 +269,22 @@
     <div class="container project">
       <div class="project-left">
         <div class="section-label"><span class="accent-dot"></span> Featured Project</div>
-        <h2 class="section-title">A polished control layer for AI operations</h2>
-        <p class="body body--light">
-          A modern dashboard experience that turns complex telemetry into actionable insights—fast.
+        <h2 class="section-title">GlyGuard AI</h2>
+        <p class="body body--light">GlyGuard AI is an AI powered diabetes  monitoring platform that provides smart glucose tracking, health insights, and personalised care recommendation 
         </p>
 
         <div class="bullet-grid" role="list" aria-label="Project benefits">
           <div class="bullet-item"><span class="check check--glow">✓</span>Real-time monitoring</div>
-          <div class="bullet-item"><span class="check check--glow">✓</span>Role-based access</div>
-          <div class="bullet-item"><span class="check check--glow">✓</span>Audit-ready logs</div>
-          <div class="bullet-item"><span class="check check--glow">✓</span>Automated incident triage</div>
+          <div class="bullet-item"><span class="check check--glow">✓</span>AI Health Assistant</div>
+          <div class="bullet-item"><span class="check check--glow">✓</span>Exercise and activity Monitoring </div>
+          <div class="bullet-item"><span class="check check--glow">✓</span>Carbohydrate Tracking</div>
+          <div class="bullet-item"><span class="check check--glow">✓</span>Medication Reminders</div>
+
         </div>
 
         <div class="project-actions">
-          <a class="btn btn--primary" href="#apply">Request a Demo</a>
         </div>
+
       </div>
 
       <div class="project-right" aria-label="Product mockup">
@@ -323,44 +294,59 @@
               <span class="dot" style="background:#1DE9B6"></span>
               <span class="dot" style="background:#00E5FF"></span>
               <span class="dot" style="background:#4B5563"></span>
-              <div class="mockup-title">Ops Dashboard</div>
+              <div class="mockup-title">Patient Vital Signs Monitor</div>
+
             </div>
             <div class="mockup-body">
               <div class="dash-row">
                 <div class="metric">
-                  <div class="metric-label">Throughput</div>
-                  <div class="metric-value">1.28×</div>
+                  <div class="metric-label metric-label--glow">Systolic</div>
+                  <div class="metric-value metric-value--blood">118<span class="metric-unit">mmHg</span></div>
                 </div>
                 <div class="metric">
-                  <div class="metric-label">Latency</div>
-                  <div class="metric-value">92ms</div>
+                  <div class="metric-label metric-label--glow">Diastolic</div>
+                  <div class="metric-value metric-value--blood">76<span class="metric-unit">mmHg</span></div>
                 </div>
                 <div class="metric">
-                  <div class="metric-label">Uptime</div>
-                  <div class="metric-value">99.97%</div>
+                  <div class="metric-label metric-label--glow">Heart Rate</div>
+                  <div class="metric-value metric-value--blood">70<span class="metric-unit">bpm</span></div>
                 </div>
+
               </div>
 
               <div class="dash-panels">
-                <div class="panel panel--chart">
-                  <div class="panel-title">Signals</div>
-                  <div class="spark">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                <div class="panel panel--chart panel--vitals" aria-label="Pulse waveform">
+                  <div class="panel-title panel-title--teal">Pulse Waveform</div>
+                  <div class="pulse-bars" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                   </div>
                 </div>
-                <div class="panel panel--list">
-                  <div class="panel-title">Incidents</div>
-                  <ul class="panel-list" role="list">
-                    <li><span class="pill pill--good">Resolved</span> Build pipeline</li>
-                    <li><span class="pill pill--warn">Investigating</span> Token spikes</li>
-                    <li><span class="pill pill--bad">Action</span> Alert routing</li>
+                <div class="panel panel--list panel--vascular" aria-label="Vascular status">
+                  <div class="panel-title panel-title--teal">Vascular Status</div>
+                  <ul class="panel-list panel-list--vascular" role="list">
+                    <li>
+                      <span class="v-pill v-pill--steady">Steady</span>
+                      <span class="v-text">Normal sinus rhythm.</span>
+                    </li>
+                    <li>
+                      <span class="v-pill v-pill--trend">Trend</span>
+                      <span class="v-text">Optimal range maintained.</span>
+                    </li>
+                    <li>
+                      <span class="v-pill v-pill--review">Review</span>
+                      <span class="v-text">Pulse pressure variation.</span>
+                    </li>
                   </ul>
                 </div>
               </div>
+
             </div>
+
+            <div class="mockup-frame-mark" aria-hidden="true">CardioPulse CP-200</div>
           </div>
 
-          <div class="mockup phone" aria-hidden="true">
+
+          <!-- <div class="mockup phone" aria-hidden="true">
             <div class="phone-notch"></div>
             <div class="phone-screen">
               <div class="phone-head">AI Status</div>
@@ -379,7 +365,7 @@
                 <div class="mini-card">Latency under target</div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="mockup-glow" aria-hidden="true"></div>
         </div>
@@ -387,50 +373,7 @@
     </div>
   </section>
 
-  <!-- Achievements / Milestones -->
-  <section class="section section--light" id="milestones">
-    <div class="container milestones">
-      <div class="milestones-left">
-        <div class="section-label"><span class="accent-dot"></span> Achievements</div>
-        <h2 class="section-title section-title--dark">Milestones we’re building toward</h2>
-        <div class="milestone-list" role="list" aria-label="Current milestones">
-          <div class="milestone"><span class="check">✓</span>Launched AI-ready analytics dashboards</div>
-          <div class="milestone"><span class="check">✓</span>Reduced deployment time with automated pipelines</div>
-          <div class="milestone"><span class="check">✓</span>Implemented security baselines across services</div>
-          <div class="milestone"><span class="check">✓</span>Created a premium design system for product teams</div>
-        </div>
 
-        <div class="milestones-note body body--dark">
-          Outcomes matter: speed, reliability, and conversion-ready experiences.
-        </div>
-      </div>
-
-      <div class="milestones-right" role="list" aria-label="Future goals">
-        <div class="grid-5 goals-grid">
-          <div class="goal-card" role="listitem">
-            <div class="goal-icon" aria-hidden="true">⟡</div>
-            <div class="goal-text">Global rollouts</div>
-          </div>
-          <div class="goal-card" role="listitem">
-            <div class="goal-icon" aria-hidden="true">⌁</div>
-            <div class="goal-text">Edge optimization</div>
-          </div>
-          <div class="goal-card" role="listitem">
-            <div class="goal-icon" aria-hidden="true">⎔</div>
-            <div class="goal-text">Smart automation</div>
-          </div>
-          <div class="goal-card" role="listitem">
-            <div class="goal-icon" aria-hidden="true">∿</div>
-            <div class="goal-text">Privacy by design</div>
-          </div>
-          <div class="goal-card" role="listitem">
-            <div class="goal-icon" aria-hidden="true">⟢</div>
-            <div class="goal-text">Design velocity</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Careers & Internships -->
   <section class="section section--light" id="careers">
@@ -440,206 +383,86 @@
         <h2 class="section-title section-title--dark">Join the team building what’s next</h2>
       </div>
 
-      <div class="two-cards">
-        <div class="career-card">
-          <div class="career-media" aria-hidden="true">
-            <!-- Lifestyle image placeholder (gradient + noise feel) -->
-            <div class="media-overlay"></div>
+      <div class="career-two-col" aria-label="Internship and career opportunities">
+        <!-- Container 1: Internship Courses -->
+        <div class="career-glass-card" role="group" aria-label="Internship Courses">
+          <div class="career-card-head">
+            <div class="career-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 19V5" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+                <path d="M4 5h16l-2 6H6l-2-6z" stroke="#1DE9B6" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M8 19h8" stroke="#00E5FF" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="career-card-title">Internship Courses</div>
+              <div class="career-card-sub">Project-based learning + mentorship</div>
+            </div>
           </div>
-          <div class="career-content">
-            <div class="career-title">Engineering Internships</div>
-            <div class="career-desc">Work with real product teams—ship features, learn fast, grow stronger.</div>
-            <a class="btn btn--primary" href="#apply">View Open Roles</a>
+
+          <p class="career-card-desc">Gain practical industry experience through project-based learning and mentorship from experienced professionals.</p>
+
+          <ul class="career-bullets" role="list">
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Hands-on training in AI Chatbots</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Software Development</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Mobile App Development</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Web Development</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Cloud Computing</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>IT Consulting</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Robotics &amp; Automation</li>
+          </ul>
+
+          <div class="career-card-actions">
+            <a class="btn btn--primary" href="#apply">Explore Internship Tracks</a>
           </div>
         </div>
 
-        <div class="career-card">
-          <div class="career-media career-media--alt" aria-hidden="true">
-            <div class="media-overlay"></div>
+        <!-- Container 2: Career Opportunities -->
+        <div class="career-glass-card career-glass-card--alt" role="group" aria-label="Career Opportunities">
+          <div class="career-card-head">
+            <div class="career-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2l8 4v6c0 5-3.5 10-8 10S4 17 4 12V6l8-4z" stroke="#00E5FF" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M9 12l2 2 4-5" stroke="#1DE9B6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="career-card-title">Career Opportunities</div>
+              <div class="career-card-sub">Build technology solutions that scale</div>
+            </div>
           </div>
-          <div class="career-content">
-            <div class="career-title">Product & UX Opportunities</div>
-            <div class="career-desc">Build design systems, craft conversion-focused experiences, and collaborate daily.</div>
-            <a class="btn btn--primary" href="#apply">Explore Careers</a>
+
+          <p class="career-card-desc">Join our growing team and work on innovative technology solutions that help businesses transform and scale.</p>
+
+          <ul class="career-bullets" role="list">
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>AI Engineer / AI Developer</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Chatbot Developer</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Software Developer</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Mobile App Developer</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Web Developer</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Cloud Engineer</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>IT Consultant</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>IoT Engineer</li>
+            <li><span class="career-bullet-dot" aria-hidden="true"></span>Robotics Engineer</li>
+          </ul>
+
+          <div class="career-card-actions">
+            <a class="btn btn--ghost" href="#apply">Apply for Roles</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Application + Contact -->
-  <section class="section section--light" id="contact">
-    <div class="container contact-wrap">
-      <div class="contact-grid">
-        <!-- Form -->
-        <div class="contact-panel">
-          <div class="section-label"><span class="accent-dot"></span> Application Form</div>
-          <h2 class="section-title section-title--dark">Apply in minutes</h2>
-          <p class="body body--dark" style="margin-top: -6px;">Tell us what you’re building toward.</p>
 
-          <form class="form" id="apply" action="#" method="post">
-            <div class="form-row">
-              <label class="field">
-                <span class="field-label">Full Name</span>
-                <input class="input" type="text" name="name" placeholder="Your name" required />
-              </label>
-              <label class="field">
-                <span class="field-label">Email</span>
-                <input class="input" type="email" name="email" placeholder="you@company.com" required />
-              </label>
-            </div>
 
-            <div class="form-row">
-              <label class="field">
-                <span class="field-label">Role</span>
-                <select class="input" name="role" required>
-                  <option value="">Select a role</option>
-                  <option>Engineering Internship</option>
-                  <option>Product & UX</option>
-                  <option>Data & Analytics</option>
-                  <option>Cloud / DevOps</option>
-                </select>
-              </label>
 
-              <label class="field">
-                <span class="field-label">Availability</span>
-                <select class="input" name="availability" required>
-                  <option value="">Select</option>
-                  <option>Immediate</option>
-                  <option>1–2 months</option>
-                  <option>3+ months</option>
-                </select>
-              </label>
-            </div>
-
-            <label class="field">
-              <span class="field-label">Upload Portfolio / CV</span>
-              <div class="upload">
-                <input class="upload-input" type="file" name="file" accept="image/*,.pdf" />
-                <div class="upload-ui">
-                  <div class="upload-icon" aria-hidden="true">⤓</div>
-                  <div>
-                    <div class="upload-title">Choose a file</div>
-                    <div class="upload-sub">PDF, PNG, or JPG</div>
-                  </div>
-                </div>
-              </div>
-            </label>
-
-            <label class="field">
-              <span class="field-label">Message</span>
-              <textarea class="input textarea" name="message" placeholder="What are you excited to work on?" rows="4"></textarea>
-            </label>
-
-            <button class="btn btn--primary btn--full" type="submit">Submit</button>
-
-            <div class="form-footnote">By submitting, you agree to be contacted about your application.</div>
-          </form>
-        </div>
-
-        <!-- Contact -->
-        <div class="contact-panel contact-panel--alt" aria-label="Contact information">
-          <div class="watermark" aria-hidden="true"></div>
-          <div class="section-label"><span class="accent-dot"></span> Contact</div>
-          <h2 class="section-title section-title--dark">Let’s build together</h2>
-          <p class="body body--dark">Reach out for partnerships, demos, or roles.</p>
-
-          <div class="contact-lines">
-            <div class="contact-line">
-              <span class="contact-icon" aria-hidden="true">✉</span>
-              <div>
-                <div class="contact-k">Email</div>
-                <div class="contact-v">hello@novatech.example</div>
-              </div>
-            </div>
-            <div class="contact-line">
-              <span class="contact-icon" aria-hidden="true">☎</span>
-              <div>
-                <div class="contact-k">Phone</div>
-                <div class="contact-v">+1 (555) 013-2025</div>
-              </div>
-            </div>
-            <div class="contact-line">
-              <span class="contact-icon" aria-hidden="true">⌖</span>
-              <div>
-                <div class="contact-k">Location</div>
-                <div class="contact-v">San Francisco • Remote-friendly</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="social" aria-label="Social links">
-            <a class="social-btn s1" href="#" aria-label="Twitter">
-              <span aria-hidden="true">𝕏</span>
-            </a>
-            <a class="social-btn s2" href="#" aria-label="LinkedIn">
-              <span aria-hidden="true">in</span>
-            </a>
-            <a class="social-btn s3" href="#" aria-label="GitHub">
-              <span aria-hidden="true">⌂</span>
-            </a>
-            <a class="social-btn s4" href="#" aria-label="Dribbble">
-              <span aria-hidden="true">◍</span>
-            </a>
-          </div>
-
-          <div class="contact-cta">
-            <a class="btn btn--primary" href="#apply">Get Started</a>
-            <a class="btn btn--ghost" href="#projects">See the Dashboard</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer section--dark" aria-label="Footer">
-    <div class="container footer-inner">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="brand brand--footer">
-            <span class="brand-mark" aria-hidden="true">◆</span>
-            <span class="brand-name">MPSD Trinity Technologies</span>
-          </div>
-          <p class="footer-text">Premium engineering for AI-ready businesses.</p>
-        </div>
-
-        <div class="footer-col">
-          <div class="footer-title">Quick Links</div>
-          <ul class="footer-links" role="list">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#careers">Careers</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <div class="footer-title">Services</div>
-          <ul class="footer-links" role="list">
-            <li><a href="#services">AI Platform Engineering</a></li>
-            <li><a href="#services">Security & Compliance</a></li>
-            <li><a href="#services">Cloud & DevOps</a></li>
-            <li><a href="#services">Product UX Systems</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <div class="footer-title">Contact</div>
-          <div class="footer-text">hello@novatech.example</div>
-          <div class="footer-text">+1 (555) 013-2025</div>
-          <div class="footer-text">San Francisco • Remote</div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-border" aria-hidden="true"></div>
-        <div class="copyright">© <span id="year"></span> MPSD Trinity Technologies. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
+  <!-- Shared Footer -->
+  <div data-include="footer"></div>
 
   <script src="./script.js"></script>
 </body>
 </html>
+
+
 
